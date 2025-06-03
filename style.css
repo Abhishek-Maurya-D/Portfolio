@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121212;
+    /* Dark background for contrast */
+    color: #e0e0e0;
+    /* Light text for readability */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation */
+header {
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00bcd4;
+    /* Bright color for logo */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+    /* Highlight color on hover */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.hero-content {
+    flex: 1 1 40%;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #00bcd4;
+    /* Bright highlight color */
+}
+
+.hero-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    border: none;
+    background-color: #00bcd4;
+    /* Bright color for the divider */
+    height: 2px;
+    margin: 40px 10%;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00bcd4;
+    /* Bright color for headings */
+}
+
+p {
+    font-size: 1.1rem;
+    color: #b0bec5;
+    /* Softer text color for paragraphs */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Experience Section */
+.experience-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.experience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.experience-card {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.experience-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00bcd4;
+    /* Bright color for titles */
+}
+
+.experience-desc {
+    font-size: 0.9rem;
+    color: #b0bec5;
+    /* Softer text color for descriptions */
+}
+
+/* Projects Section */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #00bcd4;
+    /* Bright color for titles */
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #1a1a1a;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social-links a img {
+    width: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #0e0e1a;
+    padding: 40px 10%;
+    text-align: center;
+    color: #b0bec5;
+    /* Softer text color for footer */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-image {
+        flex: 1 1 100%;
+    }
+}
